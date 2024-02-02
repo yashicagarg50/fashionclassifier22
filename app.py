@@ -1,3 +1,5 @@
+from collections import Counter, defaultdict, namedtuple, OrderedDict
+from collections.abc import Iterable
 
 
 from fastai.vision.all import *
