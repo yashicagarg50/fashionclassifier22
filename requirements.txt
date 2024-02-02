@@ -1,4 +1,6 @@
+Python 3.10.12
+mamba 1.4.2
+conda 23.3.1
+gradio 4.8.0
+pytorch 2.1.1
 fastai
-gradio==3.50
-gradio_client==0.6.1
-torch
