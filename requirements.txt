@@ -1,3 +1,4 @@
 fastai
-gradio
+gradio==3.50
+gradio_client==0.6.1
 torch
