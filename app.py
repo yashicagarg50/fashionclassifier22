@@ -1,11 +1,11 @@
-import gradio as gr
+
 
 from fastai.vision.all import *
 import gradio as gr
 def style(x): return x[0].isupper()
 
 
-learn=load_learner('https://drive.google.com/file/d/1jjGAKMHxvL7xJIHXFXLBULOmln9eoavW/view?usp=sharing')
+learn=load_learner('model.pkl')
 
 categories = ('active wear','bussiness wear','ethnic wear','goth fashion')
 def classify_image(img):
