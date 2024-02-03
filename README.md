@@ -10,4 +10,6 @@ pinned: false
 license: apache-2.0
 ---
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+
+model.pkl : https://drive.google.com/file/d/1jjGAKMHxvL7xJIHXFXLBULOmln9eoavW/view?usp=sharing
+Website : https://huggingface.co/spaces/beckk123/fashionclassifier
