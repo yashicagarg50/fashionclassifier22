@@ -22,8 +22,8 @@ def classify_image(img):
 
 intf = gr.Interface(
     fn=classify_image,
-    inputs=gr.inputs.Image(type="pil"),
-    outputs=gr.outputs.Label(),
+    inputs=gr.Image(type="pil"),
+    outputs=gr.Label(),
     examples=['business.jpg', 'goth.jpeg']
 )
 
