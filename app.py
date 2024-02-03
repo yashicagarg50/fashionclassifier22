@@ -1,9 +1,7 @@
-from collections import Counter, defaultdict, namedtuple, OrderedDict
-from collections.abc import Iterable
-
 
 from fastai.vision.all import *
 import gradio as gr
+from PIL import Image
 def style(x): return x[0].isupper()
 
 
@@ -13,6 +11,8 @@ categories = ('active wear','bussiness wear','ethnic wear','goth fashion')
 
 def classify_image(img):
     pred, idx, probs = learn.predict(img)
+    img = img.resize((192, 192))
+    # Your classification logic here
     return dict(zip(categories,map (float,probs)))
 
 # image = gr.inputs.Image(shape=(192, 192))
@@ -22,8 +22,8 @@ def classify_image(img):
 
 intf = gr.Interface(
     fn=classify_image,
-    inputs=gr.Image(shape=(192, 192), type="pil"),
-    outputs=gr.Label(),
+    inputs=gr.inputs.Image(type="pil"),
+    outputs=gr.outputs.Label(),
     examples=['business.jpg', 'goth.jpeg']
 )
 
